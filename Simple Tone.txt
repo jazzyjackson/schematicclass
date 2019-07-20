@@ -1,0 +1,14 @@
+Connect Trigger to Threshold (555: 6 -> 2, 556: 2 -> 6)
+Reset is pulled to Vsupply (555: 4 -> 8, 556: 4 -> 14)
+1kOhm between Discharge and Vsupply (555: 7 -> 8, 556: 1 -> 14)
+100nF between Ground and Trigger (555: 1 -> 2, 556: 6 -> 7)
+10nF between Ground and Control (555: 1 -> 5, 556: 7 -> 3)
+
+Variable Resistor between Threshold and Discharge (555: 6 -> 7, 556: 1 -> 2)
+
+Output device on 'Output' drains through a 150ohm resistor to Reset
+  555: 3 -> device -> 150 ohm -> 4
+  556: 5 -> device -> 150 ohm -> 4
+  
+Power to Vsupply (555: 8, 556: 14)
+Vground to GND (555: 1, 556: 7)
